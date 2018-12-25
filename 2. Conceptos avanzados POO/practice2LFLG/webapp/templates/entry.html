@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+	<h2>{{ the_title }}</h2>
+	<form method='POST' action='/speed'>
+		<table>
+			<p>Use this form to calculate speed (S = D/T):</p>
+			<tr><td>Distance:</td><td><input name='distance' type='TEXT' width='60' placeholder="0 m" required></td></tr>
+			<tr><td>Time:</td><td><input name='time' type='TEXT' placeholder="0 s" required></td></tr>
+		</table>
+		<p>When you're ready, click this button:</p>
+		<p><input value='Calculate' type='SUBMIT'></p>
+	</form>
+	
+{% endblock %}

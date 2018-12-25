@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+	<h2>{{ the_title }}</h2>
+		<p>You submitted the following data:</p>
+		<table>
+			<tr><td>Distance:</td><td>{{ the_distance }}</td></tr>
+			<tr><td>Time:</td><td>{{ the_time }}</td></tr>
+		</table>
+		<p>
+			When the distance value is <b>"{{ the_distance }}"</b> and the time is <b>"{{ the_time }}"</b> seconds, the following results are returned:
+		</p>
+		<h3>{{ the_results }} m/s</h3>
+		<p><a href="/entry" type="SUBMIT">Back to</a></p>
+		
+{% endblock %}
